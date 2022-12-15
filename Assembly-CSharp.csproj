@@ -37,6 +37,8 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\TaxiController.cs" />
+     <Compile Include="Assets\Scripts\CollisionDetection.cs" />
+     <Compile Include="Assets\Scripts\DropOffCustomer.cs" />
     <Reference Include="UnityEngine">
         <HintPath>F:\STORAGE\Programs\UNITY\2021.3.15f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -804,6 +806,10 @@
       <Project>{cbcb0dbd-9cc6-5e06-84c6-a7889dd2d578}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{e693bf44-ca1b-3939-83e1-01be8423cf5f}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Services.Core.Analytics.csproj">
       <Project>{a2499cba-607b-a14d-82e0-b755cc3aafaa}</Project>
       <Name>Unity.Services.Core.Analytics</Name>
@@ -811,6 +817,10 @@
     <ProjectReference Include="Unity.Burst.csproj">
       <Project>{b0b6b315-fabd-e839-ac4d-3698d4bb74a7}</Project>
       <Name>Unity.Burst</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{f2735016-1c09-e8c2-9574-d7625a90f01f}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj">
       <Project>{6e075fb9-24db-eeb1-472d-74e6cf7d73b6}</Project>
@@ -855,14 +865,6 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{7170dcf9-ca61-d534-f7b3-ded6befa1b2e}</Project>
       <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
-      <Project>{f2735016-1c09-e8c2-9574-d7625a90f01f}</Project>
-      <Name>com.unity.cinemachine.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.csproj">
-      <Project>{e693bf44-ca1b-3939-83e1-01be8423cf5f}</Project>
-      <Name>Cinemachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
